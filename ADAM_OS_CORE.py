@@ -18,13 +18,14 @@ def pause():
     time.sleep(1.5)
 
 
-#This function clears the screen when nesseary.
+# This function clears the screen when nesseary.
 def clear():
     if sys.platform == "win32":
         os.system('cls')
     else:
         os.system('clear')
 
+# Makes the main menu... Duh.
 def make_main_menu():
     print(30 * "-", "Menu", 30 * "-")
     print("1.) Initialize Systems")
@@ -35,6 +36,7 @@ def make_main_menu():
     print("6.) Shutdown System")
     print(67 * "-")
 
+# start the system
 def Initialize_Systems():
     First_Run = True
     clear()
@@ -96,6 +98,7 @@ def user_management():
         elif userchoice == "3":
             print("Returning to Main Menu...")
             time.sleep(3)
+            clear()
             break
         else:
             print("Error, entry not valid.")
