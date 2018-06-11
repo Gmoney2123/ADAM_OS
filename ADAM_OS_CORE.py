@@ -38,7 +38,7 @@ def make_main_menu():
 
 # start the system
 def Initialize_Systems():
-    First_Run = True
+    First_Run = False
     clear()
     print("\nLoading, Please wait...\n")
 
@@ -156,6 +156,7 @@ def run_diagnostic():
     pause()
     print("Now returning to Menu")
     clear()
+    
 # Run the Code
 
 print("Initializing A.D.A.M. Operation and Control Architecture...")
